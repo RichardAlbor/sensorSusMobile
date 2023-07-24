@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">SensorSus</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="restaurant">Hospitais</string>
+    <string name="category">Hospital Pediatrico</string>
+    <string name="favorites">Hospitais Favoritos</string>
+    <string name="favorite_food">Remédios Favoritos</string>
+    <string name="wizzard">Tutorial</string>
+    <string name="exit">Sair</string>
+
+    <!--Home Activity-->
+    <string name="welcome_title">Bem Vindo</string>
+    <string name="welcome_sign_to_continue">Faça login para continuar.</string>
+    <string name="welcome_email_or_username">EMAIL OU NOME DE USUÁRIO</string>
+    <string name="welcome_password">SENHA</string>
+    <string name="welcome_login_button">ENTRAR</string>
+    <string name="welcome_fb_login_button">ENTRAR COM FACEBOOK</string>
+    <string name="welcome_forgot_password">ESQUECEU SUA SENHA?</string>
+    <string name="welcome_dont_have_account">NÃO TEM CONTA AINDA? CADASTRE-SE.</string>
+
+    <!--Home Activity-->
+    <string name="home_categories">Serviços Hospitalares</string>
+    <string name="home_places">Hospitais</string>
+    <string name="home_view_all">Ver Todos</string>
+    <string name="home_search">Buscar</string>
+    <string name="home_toolbar">Bem Vindo, Richard</string>
+    <string name="home_filter">Filtro</string>
+
+    <!--Place Activity-->
+    <string name="place_tipo_Hospital">Tipo Hospital</string>
+    <string name="place_delivery">Entrega</string>
+    <string name="place_open_time">Horários</string>
+    <string name="place_contact">Contato</string>
+    <string name="place_featured">ACONTECIMENTOS</string>
+    <string name="place_menu">MENU</string>
+
+
+    <!--Item Details Activity-->
+    <string name="item_details_extra_title">Serviços Avaliados</string>
+    <string name="item_details_extra_obs">Alguma obervação sobre a avaliação?</string>
+    <string name="item_details_extra_hint">Ex: Sou o Gestor do hospital e as medidas corretivas já foram tomadas...</string>
+    <string name="item_details_description">DESCRIÇÃO</string>
+    <string name="item_details_replica_avaliacao">FAZER OBSERVAÇÃO DA AVALIAÇÃO</string>
+    <string name="item_details_add_to_order">FAZER PEDIDO</string>
+
+    <!--Profile Activity-->
+    <string name="profile_toolbar">Perfil</string>
+    <string name="profile_edit">Editar</string>
+    <string name="profile_account_credits">Crédito</string>
+    <string name="profile_favorite_foods">Remédios Favoritos</string>
+    <string name="profile_favorite_restaurants">Hospitais Favoritos</string>
+
+    <!--Favorite Foods Activity-->
+    <string name="fav_food_toolbar">Remédios FAVORITOS</string>
+    <string name="fav_food_title">Remédios Favoritos</string>
+
+    <!--Favorite Restaurants Activity-->
+    <string name="fav_place_toolbar">Hospitais FAVORITOS</string>
+    <string name="fav_place_title">Hospitais Favoritos</string>
+
+    <!--Restaurants List Activity-->
+    <string name="places_list_toolbar">Hospitais</string>
+    <string name="places_list_title">Hospitais</string>
+
+    <!--Categories List Activity-->
+    <string name="categories_list_toolbar">SERVIÇOS HOSPITAL</string>
+    <string name="categories_list_title">Serviços Hospital</string>
+    <string name="categories_list_contact">Tem alguma categoria para sugerir? Contate-nos!</string>
+
+    <!--Menu-->
+    <string name="menu_home">Início</string>
+    <string name="menu_discover">Buscar Próximo a mim</string>
+    <string name="menu_favorite">Favoritos</string>
+    <string name="menu_profile">Perfil</string>
+
+    <!--Ask for food-->
+    <string name="ask_for_food_begin">Olá! Gostaria de pedir um</string>
+    <string name="ask_for_food_extras">com os adicionais de: </string>
+
+</resources>
