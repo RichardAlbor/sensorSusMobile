@@ -35,7 +35,7 @@ import retrofit2.Response;
 
 public class PlaceAdapter extends RecyclerView.Adapter<PlaceAdapter.ItemHolder> {
 
-    private List<Place> mPlaces = new ArrayList<>();
+    final private List<Place> mPlaces = new ArrayList<>();
     final Context context;
     private final OnPlaceClickListener mListener;
     List<Content> estabelecimentos;
@@ -51,12 +51,13 @@ public class PlaceAdapter extends RecyclerView.Adapter<PlaceAdapter.ItemHolder> 
         }
 
 
-        Retrofit retrofitClient = NetworkUtils.getRetrofitInstance("   https://d018-191-243-27-137.sa.ngrok.io");
+        Retrofit retrofitClient = NetworkUtils.getRetrofitInstance("https://b68d-200-133-17-1.ngrok.io/");
 
         ApiService apiService = retrofitClient.create(ApiService.class);
 
 
         final PlaceAdapter minhaClassePlaceAdpter= this;
+
         apiService.getData().enqueue(new Callback<JsonObject>() {
             @Override
             public void onResponse(Call<JsonObject> call, Response<JsonObject> response) {
@@ -74,19 +75,16 @@ public class PlaceAdapter extends RecyclerView.Adapter<PlaceAdapter.ItemHolder> 
 
                             minhaClassePlaceAdpter.estabelecimentos = gson.fromJson(jsonArray, tipoListaContent);
 
-                            //ESTOU TRAVADO AQUI RICHARD ALBOR
+
+                            // Agora você tem a lista de objetos Content pronta para ser utilizada
+                            for (Content content : estabelecimentos) {
+                                //Pegar os 10 primeiros hospitais aqui
+                                Place place = new Place( content.id,content.nome, content.endereco.logradouro, String. valueOf(content.score) , content.endereco.cep );
+                                minhaClassePlaceAdpter.mPlaces.add(place);
+                            }
                         }
                     }
 
-//                    // Agora você tem a lista de objetos Content pronta para ser utilizada
-                    for (Content content : estabelecimentos) {
-
-                        //Pegar os 10 primeiros hospitais aqui
-
-
-
-                        // Toast.makeText(minhaClassePlaceAdpter.context, content.nome, 1000);
-                    }
                 }
 
 
